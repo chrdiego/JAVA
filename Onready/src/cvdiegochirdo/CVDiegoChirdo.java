@@ -61,11 +61,10 @@ public class CVDiegoChirdo {
          
         System.out.println("Vehículo más caro: " + marcaMayor + " " + modeloMayor);
         System.out.println("Vehículo más barato: " + marcaMenor + " " + modeloMenor);
-        
         System.out.print("Vehículo que contiene en el modelo la letra 'Y': ");
         for(Vehiculo item: lista){
             for(int contador = 0; contador < item.getModelo().length(); contador++){
-                if(item.getModelo().charAt(contador) == 'Y'){
+                if(item.getModelo().charAt(contador) == 'Y' || item.getModelo().charAt(contador) == 'y'){
                     System.out.println(item.getMarca() + " " + item.getModelo() + " $" + item.getPrecio());
                     break;
                 }
@@ -73,8 +72,8 @@ public class CVDiegoChirdo {
         }
         
         System.out.println("=============================");
-        System.out.println("Vehículos ordenados por precio de mayor a menor: ");
         
+        System.out.println("Vehículos ordenados por precio de mayor a menor: ");
         Collections.sort(lista, new Comparator<Vehiculo>(){
             @Override
             public int compare(Vehiculo v1, Vehiculo v2) {
@@ -88,7 +87,6 @@ public class CVDiegoChirdo {
                     return 0;
             }
         });
-
         for(Vehiculo item : lista){
             System.out.println(item.getMarca() + " " + item.getModelo());
         }
