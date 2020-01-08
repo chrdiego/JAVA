@@ -11,5 +11,4 @@ package cvdiegochirdo;
  */
 public interface IMostrar {
     public void Mostrar();
-    public void MostrarOrdenado();
 }

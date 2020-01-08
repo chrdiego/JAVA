@@ -35,8 +35,4 @@ public abstract class Vehiculo implements IMostrar {
     public void Mostrar(){
     System.out.println("Marca: " + this.marca + " // Modelo: " + this.modelo + " // Precio: $" + this.precio);
     }
-    
-    public void MostrarOrdenado(){
-         System.out.println(this.marca + " " + this.modelo);
-     }
 }

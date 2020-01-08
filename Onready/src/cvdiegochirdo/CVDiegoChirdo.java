@@ -58,23 +58,19 @@ public class CVDiegoChirdo {
             marcaMenor = item.getMarca();
         }
         }
-        
-        
+         
         System.out.println("Vehículo más caro: " + marcaMayor + " " + modeloMayor);
         System.out.println("Vehículo más barato: " + marcaMenor + " " + modeloMenor);
         
-        List<String> listaY = new ArrayList<>();
+        System.out.print("Vehículo que contiene en el modelo la letra 'Y': ");
         for(Vehiculo item: lista){
             for(int contador = 0; contador < item.getModelo().length(); contador++){
                 if(item.getModelo().charAt(contador) == 'Y'){
-                    listaY.add(item.getMarca() + " " + item.getModelo() + " " + "$" + item.getPrecio());
+                    System.out.println(item.getMarca() + " " + item.getModelo() + " $" + item.getPrecio());
                     break;
                 }
             }
         }
-        
-        System.out.print("Vehículo que contiene en el modelo la letra 'Y': ");
-        System.out.println(listaY);
         
         System.out.println("=============================");
         System.out.println("Vehículos ordenados por precio de mayor a menor: ");
@@ -94,8 +90,7 @@ public class CVDiegoChirdo {
         });
 
         for(Vehiculo item : lista){
-            item.MostrarOrdenado();
+            System.out.println(item.getMarca() + " " + item.getModelo());
         }
-        
     }    
 }
