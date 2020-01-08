@@ -39,5 +39,4 @@ public abstract class Vehiculo implements IMostrar {
     public void MostrarOrdenado(){
          System.out.println(this.marca + " " + this.modelo);
      }
- 
 }

@@ -6,8 +6,8 @@
 package cvdiegochirdo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -79,10 +79,23 @@ public class CVDiegoChirdo {
         System.out.println("=============================");
         System.out.println("Vehículos ordenados por precio de mayor a menor: ");
         
+        Collections.sort(lista, new Comparator<Vehiculo>(){
+            @Override
+            public int compare(Vehiculo v1, Vehiculo v2) {
+                if(v1.getPrecio() < v2.getPrecio()) {
+                    return 1;
+                }
+                else if(v1.getPrecio() > v2.getPrecio()) {
+                    return -1;
+                }
+                else
+                    return 0;
+            }
+        });
+
         for(Vehiculo item : lista){
             item.MostrarOrdenado();
         }
         
-    }
-    
+    }    
 }
