@@ -2,9 +2,8 @@ package Ejercicios;
 
 public class Resta {
 
-	private float x;
-	private float y;
-	private float m;
+	private float punto;
+	private float pendiente;
 	
 	public Resta(float punto, float pendiente) {
 		this.punto = punto;
