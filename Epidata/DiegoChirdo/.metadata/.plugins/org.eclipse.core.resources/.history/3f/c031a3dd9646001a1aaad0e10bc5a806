@@ -1,0 +1,30 @@
+package Ejercicios;
+public class Punto {
+	private int x = 0;
+	private int y = 0;
+	
+	public int x() {
+		return this.x;
+	}
+	
+	public int y() {
+		return this.y;
+	}
+	
+	public void Desplazar(char opcion) {
+		Scanner sn = new Scanner();
+		while(opcion != x || opcion != y) {
+			if(opcion == x)
+				System.out.println("Ingrese un nuevo punto para X");
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Punto p = new Punto();
+		System.out.println(p.x());
+		System.out.println(p.y());
+	}
+
+}

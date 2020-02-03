@@ -1,0 +1,26 @@
+package Ejercicios;
+
+public class Resta {
+
+	private double punto = 0;
+	private double pendiente = 0;
+	
+	public Resta(double punto, double pendiente) {
+		this.punto = punto;
+		this.pendiente = pendiente;
+	}
+	
+	public boolean esPunto(Resta r) {
+		
+	}
+	
+	public String toString() {
+		return "(" + punto + ", " + pendiente ";
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Ejercicio1Bis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Ingrese un numero: ");
+		Scannernner sn = new Scanner(System.in);
+	}
+
+	public static int Divisores(int n) {
+		
+	}
+}

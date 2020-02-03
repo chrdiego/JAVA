@@ -1,0 +1,12 @@
+package Ejercicios;
+public class Cuenta {
+	private int saldo = 0;
+	public int ConsultarSaldo() {
+		return this.saldo;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

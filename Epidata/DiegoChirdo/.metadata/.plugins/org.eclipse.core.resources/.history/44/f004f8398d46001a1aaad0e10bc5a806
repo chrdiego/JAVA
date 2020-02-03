@@ -1,0 +1,14 @@
+package Ejercicios;
+
+public class Ejercicio2 {
+	
+	public void saludar() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

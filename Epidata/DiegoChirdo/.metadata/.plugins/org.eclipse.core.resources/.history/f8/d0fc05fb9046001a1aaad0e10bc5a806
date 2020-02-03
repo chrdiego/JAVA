@@ -1,0 +1,17 @@
+package Ejercicios;
+public class Cuenta {
+	private int saldo = 0;
+	public int ConsultarSaldo() {
+		return this.saldo;
+	}
+	public void Extraer(int n) {
+		this.saldo = saldo - n;
+		System.out.println("Se han descontado " + n + "$, pasando a ser su saldo de $" + saldo)
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

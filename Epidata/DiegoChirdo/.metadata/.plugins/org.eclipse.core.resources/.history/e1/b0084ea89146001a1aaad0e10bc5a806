@@ -1,0 +1,33 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class Cuenta {
+	private int saldo = 0;
+	public void ConsultarSaldo() {
+		System.out.println("Su saldo es de: $" + this.saldo);
+	}
+	public void Extraer(int n) {
+		this.saldo = saldo - n;
+		System.out.println("Se han descontado $" + n + ", pasando a ser su saldo de $" + saldo);
+	}
+	public void Depositar(int n) {
+		this.saldo = saldo + n;
+		System.out.println("Se han depositado $" + n +", pasando a ser su saldo de $" + saldo);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cuenta cuenta = new Cuenta();
+		Scanner sn = new Scanner(System.in);
+		cuenta.ConsultarSaldo();
+		cuenta.Depositar(sn.nextInt());
+		cuenta.ConsultarSaldo();
+		cuenta.Extraer(50);
+		cuenta.ConsultarSaldo();
+		cuenta.Depositar(20);
+		cuenta.ConsultarSaldo();
+		cuenta.Extraer(5);
+		cuenta.ConsultarSaldo();
+	}
+
+}

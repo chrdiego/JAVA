@@ -1,0 +1,12 @@
+package Ejercicios;
+public class Punto {
+	private int x = 0;
+	private int y = 0;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Punto p = new Punto();
+		System.out.println(p.x);
+	}
+
+}

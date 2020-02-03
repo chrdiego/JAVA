@@ -1,0 +1,51 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class Punto {
+	private int x = 0;
+	private int y = 0;
+	
+	public int x() {
+		return this.x;
+	}
+	
+	public int y() {
+		return this.y;
+	}
+	
+	public String toString() {
+		String str = new String(this.x() + this.y());
+	}
+	
+	public void Desplazar(char opcion) {
+		Scanner sn = new Scanner(System.in);
+		while(opcion != x || opcion != y) {
+			if(opcion == x) {
+				System.out.println("Ingrese un nuevo punto para X: ");
+				this.x = sn.nextInt();
+				break;
+			}
+			else
+			{
+				System.out.println("Ingrese un nuevo punto para Y: ");
+				this.y = sn.nextInt();
+				break;
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Punto p = new Punto();
+		Scanner sn = new Scanner(System.in);
+		System.out.println(p.x());
+		System.out.println(p.y());
+		System.out.println("Ingrese que punto quiere desplazar (X/Y): ");
+		p.Desplazar(sn.next().charAt(0));
+		System.out.println(p.x());
+		System.out.println(p.y());
+		toString(p);
+	}
+
+}

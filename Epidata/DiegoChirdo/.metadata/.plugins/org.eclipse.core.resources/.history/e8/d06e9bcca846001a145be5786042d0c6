@@ -1,0 +1,15 @@
+package Ejercicios;
+
+public class Resta {
+
+	private int x = 0;
+	private int y = 0;
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

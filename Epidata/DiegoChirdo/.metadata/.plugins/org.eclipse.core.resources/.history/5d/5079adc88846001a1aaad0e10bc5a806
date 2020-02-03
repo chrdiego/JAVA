@@ -1,0 +1,25 @@
+package Ejercicios;
+import java.util.Scanner;
+
+//import java.util.Scanner;
+
+public class Ejercicio1 {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			System.out.println("Ingrese un numero: ");
+			Scanner sn = new Scanner(System.in);
+			Divisores(sn.nextInt());
+		}
+
+		public static void Divisores(int n) {
+			for(int i = 1; i < (n/2) + 1; i++) {
+				if(n % 2 == 0)
+					System.out.println(n);
+			}
+		}
+		
+		public static void esPrimo(int n) {
+			
+		}
+}
