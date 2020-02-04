@@ -4,12 +4,23 @@ package Ejercicios;
 public class Resta {
 
 	private Punto punto;
-	private float y;
 	private float m;
 	
-	public Resta(float punto, float pendiente) {
-		this.punto = punto;
-		this.pendiente = pendiente;
+	public Resta(Punto p, float pendiente) {
+		this.punto = p;
+		this.m = pendiente;
+	}
+	
+	public boolean equals(Resta r) {
+		if(this.punto.equals(r.punto) && this.m == r.m){
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	public Resta copy(){
+		return new Resta(this.punto, this.m);
 	}
 	
 	public boolean esPunto(Resta r) {
@@ -17,13 +28,12 @@ public class Resta {
 	}
 	
 	public String toString() {
-		return "(" + punto + ", " + pendiente + ")";
+		return "(" + punto + ", " + m + ")";
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	Resta r = new Resta(5, 6/5);
+	Resta r = new Resta(5, (6/5));
 	System.out.println(r.toString());
 	}
-
 }
