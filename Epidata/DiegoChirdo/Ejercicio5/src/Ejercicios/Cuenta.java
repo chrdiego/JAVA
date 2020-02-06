@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 public class Cuenta {
 	protected double saldo = 0;
-	private LocalDate apertura;
+	protected LocalDate apertura;
 	
 	public Cuenta() {
 		this.apertura = LocalDate.now();
@@ -28,7 +28,7 @@ public class Cuenta {
 		System.out.println("Su saldo es de: $" + this.saldo);
 	}
 	public boolean Extraer(double n) {
-		if(this.saldo > n) {
+		if(this.saldo >= n) {
 			this.saldo = saldo - n;
 			System.out.println("Se han descontado $" + n + ", pasando a ser su saldo de $" + saldo);	
 			return true;

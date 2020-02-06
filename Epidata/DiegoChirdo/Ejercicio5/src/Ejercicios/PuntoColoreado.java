@@ -32,5 +32,4 @@ public class PuntoColoreado extends Punto {
 			System.out.println(e);
 		}
 	}
-
 }
